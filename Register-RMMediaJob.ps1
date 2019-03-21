@@ -1,4 +1,4 @@
-# Create a scheduled job to run Monitor-RMMedia.ps1 silently
+# Create a scheduled job to run Monitor-RMMedia.ps1
 # Reference script: https://old.reddit.com/r/PowerShell/comments/4y7ig4/running_a_scheduled_job_at_logon/
 
 $JobOption = New-ScheduledJobOption -MultipleInstancePolicy IgnoreNew
