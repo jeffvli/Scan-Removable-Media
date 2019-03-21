@@ -14,7 +14,6 @@ Scan-RMMedia.ps1 works in conjunction with an external virus scanner to automati
 1. Clone the repository to a local or shared network location.
 2. Create a local administrator account to run the script.
 3. Create a scheduled task to run the script under the scope of the administrator account, or create a scheduled job with Register-RMMediaJob.ps1.
-   - Set Actions
     - Program/script: powershell.exe
     - Add arguments (optional): -NoLogo -NonInteractive -WindowStyle Hidden "\\Path\to\Scan-RMMedia.ps1"
 4. If created with Register-RMMediaJob.ps1, verify the scheduled task has been created by navigating to `Task Scheduler Library\Microsoft\Windows\PowerShell\ScheduledJobs`
@@ -24,3 +23,5 @@ Scan-RMMedia.ps1 works in conjunction with an external virus scanner to automati
 1. Create a new scheduled task to run whether the administrator account is logged on or not.
 2. Add a scheduled trigger for when you want to run the updates.
 3. Add actions
+    - Program/script: cmd.exe
+    - Add arguments (optional): /c ""\\path\to\a2cmd.exe" /u
