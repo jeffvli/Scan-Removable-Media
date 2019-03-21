@@ -1,4 +1,4 @@
-function Monitor-RMMedia {
+function Scan-RMMedia {
 <#  
     .SYNOPSIS
         Monitor for removable media being inserted into the system.
@@ -149,4 +149,4 @@ function Monitor-RMMedia {
     }
 }
 
-Monitor-RMMedia -DirectoryPath 'C:\Scans' -Log -Tip
+Scan-RMMedia -DirectoryPath 'C:\Scans' -Log -Tip
