@@ -29,16 +29,6 @@ function Scan-RMMedia {
     .NOTES
         Source code by monotone (removable drive check): https://answers.microsoft.com/en-us/windows/forum/windows_vista-windows_programs/task-scheduler-how-to-automatically-synchronize-my/45a49d83-b1d8-4d37-8896-3d2696cf9795
         Source code by Boe Prox (balloon tooltip): https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx
-
-    .AUTHOR
-        Jeff Li
-        jli@teamfortech.com
-
-    .VERSION
-        1.0.0 (1/2/19) - Deployed
-        1.0.1 (1/4/19) - Added check to confirm that virus scanner is installed under function Display-TipScanned; Fixed extra spaces in tooltip display
-        1.0.2 (1/11/19) - Adjusted function ordering to ensure that scanner path check is working; changed default directory path to C:\Scans
-        1.0.3 (1/15/19) - Fixed scanner path check under function Display-TipScanned; Set default tooltip off
 #>
 
     [CmdletBinding()]
