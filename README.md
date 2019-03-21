@@ -16,9 +16,7 @@ Scan-RMMedia.ps1 works in conjunction with an external virus scanner to automati
 3. Create a scheduled task to run the script under the scope of the administrator account, or create a scheduled job with Register-RMMediaJob.ps1.
     - Program/script: powershell.exe
     - Add arguments (optional): -NoLogo -NonInteractive -WindowStyle Hidden "\\Path\to\Scan-RMMedia.ps1"
-4. If created with Register-RMMediaJob.ps1, verify the scheduled task has been created by navigating to:
-
-`Task Scheduler Library\Microsoft\Windows\PowerShell\ScheduledJobs`
+4. If created with Register-RMMediaJob.ps1, verify the scheduled task has been created by navigating to: `Task Scheduler Library\Microsoft\Windows\PowerShell\ScheduledJobs`
 5. Trigger the scheduled task or run it manually to test.
 
 # Automatic detection signature updates for EEK
