@@ -24,4 +24,4 @@ Scan-RMMedia.ps1 works in conjunction with an external virus scanner to automati
 2. Add a scheduled trigger for when you want to run the updates.
 3. Add actions
     - Program/script: cmd.exe
-    - Add arguments (optional): /c ""\\path\to\a2cmd.exe" /u
+    - Add arguments (optional): /c "\\path\to\a2cmd.exe" /u
