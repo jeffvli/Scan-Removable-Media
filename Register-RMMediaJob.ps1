@@ -7,9 +7,12 @@ $NewJob = Register-ScheduledJob `
     -Name Scan-RMMedia `
     -Trigger $JobTrigger `
     -ScheduledJobOption $JobOption `
+    
+    # CHANGE THIS PATH
     -FilePath '\\Path\to\Scan-RMMedia.ps1'
 
 # Create scheduled task from Scheduled-Job
+# CHANGE USERID TO YOUR ADMIN ACCOUNT
 $TaskPrincipal = New-ScheduledTaskPrincipal -LogonType Interactive -UserId 'Domain\User'
 Set-ScheduledTask `
     -TaskPath '\Microsoft\Windows\PowerShell\ScheduledJobs\' `
